@@ -33,4 +33,4 @@ server {
 >
 > React 需在Router里面配置 basename="/report" 
 >
-> <Router basename="/report" children={ route } />
+> ```<BrowserRouter basename="/report">otherRouters</BrowserRouter>```
