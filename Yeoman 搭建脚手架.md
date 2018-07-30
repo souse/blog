@@ -126,3 +126,5 @@ module.exports = class extends Generator {
 > npm link//将模块link到`/usr/local/lib/node_modules`下并建立链接
 > ```
 
+###### demo 项目
+[generator-webpack-react](https://github.com/souse/generator-webpack-react)
