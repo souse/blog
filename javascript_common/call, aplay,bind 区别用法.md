@@ -101,11 +101,8 @@ if (!Function.prototype.bind) {
 }
 ```
 
-
-
-######汇总
-
 ```
+汇总
 1. bind返回对应函数, 便于稍后调用； apply, call则是立即调用。
 2. 在 ES6 的箭头函数下, call 和 apply 将失效, 对于箭头函数来说:
 ```
