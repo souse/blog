@@ -88,6 +88,16 @@ fn.call(null, 'Eom');         // Eom undefined undefined
 
 call 是把第二个及以后的参数作为 fn 方法的实参传进去，而 fn1 方法的实参实则是在 bind 中参数的基础上再往后排。
 
+eg: 
+var obj = {
+    message: 'test',
+    showMessage: function (event) {
+        console.log(this.message, event.type);
+    }
+};
+var dom = document.getElementById('btn');
+dom.addEventlistener('click', showMessage.bind(obj)); // 此时showMessage中的this指向obj
+
 ###### 实现一个bind
 if (!Function.prototype.bind) {
     Function.prototype.bind = function () {
