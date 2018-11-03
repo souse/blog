@@ -131,6 +131,12 @@ module.exports = class extends Generator {
 npm login / npm adduser
 npm publish
 ```
+```
+使用
+1. npm install -g generator-webpack-react
+2. yo
+3. choose ...
+```
 
 ###### demo 项目
 [generator-webpack-react](https://github.com/souse/generator-webpack-react)
