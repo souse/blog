@@ -9,6 +9,7 @@
 
 ###### 搭建 npm 仓库
 * [Nexus Repository Manager 3 搭建 npm 私服](https://zhuanlan.zhihu.com/p/35907412)
+* [npm私有仓库（基于nexus2搭建）使用手册](https://www.cnblogs.com/wfeicherish/p/8854664.html)
 
 ###### 搭建 maven 仓库
 * [Nexus3.0.0+Maven的使用](https://blog.csdn.net/jimmy609/article/details/52292675)
