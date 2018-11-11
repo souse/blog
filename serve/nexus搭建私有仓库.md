@@ -8,6 +8,7 @@
 
 
 ###### 搭建 npm 仓库
+* [官方文档](https://help.sonatype.com/repomanager2/node-packaged-modules-and-npm-registries#app)
 * [Nexus Repository Manager 3 搭建 npm 私服](https://zhuanlan.zhihu.com/p/35907412)
 * [npm私有仓库（基于nexus2搭建）使用手册](https://www.cnblogs.com/wfeicherish/p/8854664.html)
 
