@@ -8,4 +8,9 @@
 > 亦可自行解决 下载 & 破解
 
 ###### 使用
-
+* [mac & window](https://blog.csdn.net/csdn_aiyang/article/details/79153162)
+* [连接同一wifi配置Charles代理的问题](https://blog.csdn.net/njys1/article/details/74885644)
+* [证书问题](https://blog.csdn.net/Zachary_46/article/details/81458098)
+* [安装手机安装不了证书问题](https://segmentfault.com/a/1190000011573699?utm_source=tag-newest)
+> Proxy > SSL Proxying Setting  添加 Host: * ,port: 443后 手机不能访问 ？
+> iphone 手机需要在 设置 》 通用》关于本机》证书新人设置 打开信任。
