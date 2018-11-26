@@ -11,6 +11,7 @@
 * [配置 WebViews 进行调试](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews?hl=zh-cn)
 * [同上1](http://yifeng.studio/2017/04/29/debug-android-webview-with-chrome-dev-tools/)
 * [同上2](http://wiki.jikexueyuan.com/project/chrome-devtools/remote-debugging-on-android.html)
+* [同上3](https://www.jianshu.com/p/6c4b57810388)
 * [chrome远程调试白屏](http://fantaxy025025.iteye.com/blog/2379415)
 
 
