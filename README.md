@@ -23,3 +23,6 @@
 * [http跨域时的options请求](https://www.jianshu.com/p/5cf82f092201)
 * [关于请求被挂起页面加载缓慢问题的追查](http://fex.baidu.com/blog/2015/01/chrome-stalled-problem-resolving-process/)
 * [HTTP 协议中的并发限制及队首阻塞问题](https://juejin.im/post/5b8909036fb9a01a0b31a7a4)
+* [Etag & Last-modified](https://blog.csdn.net/guodengh/article/details/78952540)
+* [Expires、Last-Modified、Etag缓存控制](https://www.cnblogs.com/zhouwenhong/p/3928645.html)
+
