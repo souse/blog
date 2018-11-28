@@ -13,5 +13,6 @@
 * [证书问题](https://blog.csdn.net/Zachary_46/article/details/81458098)
 * [安装手机安装不了证书问题](https://segmentfault.com/a/1190000011573699?utm_source=tag-newest)
 * [安装手机安装不了证书问题2](https://www.cnblogs.com/bandbandme/p/7117855.html)
+* [弱网2G,3G配置](https://blog.csdn.net/qq_42191801/article/details/80288804)
 > Proxy > SSL Proxying Setting  添加 Host: * ,port: 443后 手机不能访问 ？
 > iphone 手机需要在 设置 》 通用》关于本机》证书新人设置 打开信任。
