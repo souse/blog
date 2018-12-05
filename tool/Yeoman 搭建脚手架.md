@@ -75,14 +75,12 @@ module.exports = class extends Generator {
             },
         ];
 
-        return this.prompt(questions).then(
-            function(answers) {
-                for (var item in answers) {
-                    // 把answers里的内容绑定到外层的this，便于后面的调用
-                    answers.hasOwnProperty(item) && (this.props[item] = answers[item]);
-                }
-            }.bind(this),
-        );
+        return this.prompt(questions).then(function(answers) {
+            for (var item in answers) {
+                // 把answers里的内容绑定到外层的this，便于后面的调用
+                answers.hasOwnProperty(item) && (this.props[item] = answers[item]);
+            }
+        }.bind(this));
     }
     // 拷贝文件，搭建脚手架
     writing() {
