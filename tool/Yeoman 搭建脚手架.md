@@ -123,7 +123,7 @@ module.exports = class extends Generator {
 
 > ```
 > cd generator-webpack-react 
-> npm link//将模块link到`/usr/local/lib/node_modules`下并建立链接
+> npm link  //将模块link到`/usr/local/lib/node_modules`下并建立链接
 > ```
 
 ```
