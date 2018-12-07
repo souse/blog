@@ -1,5 +1,7 @@
 ###### 下载 （文档中个人用的版本）
-[Charles 4.0.1](https://www.charlesproxy.com/)
+[Charles](https://www.charlesproxy.com/)
+
+[Charles 4.0.1](https://www.charlesproxy.com/assets/release/4.0.1/charles-proxy-4.0.1.dmg)
 
 ###### 破解方法
 * [mac & window](https://www.jianshu.com/p/89111882fa99)
