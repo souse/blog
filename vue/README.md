@@ -1,7 +1,7 @@
 > 1. [keep-alive 缓存讲解](https://www.jianshu.com/p/04d8017b56ff)
 > 2. [vue生命周期探究](https://segmentfault.com/a/1190000008879966)
 
-##### vue 文档总结
+#### vue 文档总结
 ```
 不要在选项属性或回调上使用箭头函数，
 比如 created: () => console.log(this.a) 或 vm.$watch('a', newValue => this.myMethod())。
@@ -9,7 +9,7 @@
 经常导致 Uncaught TypeError: Cannot read property of undefined 或 Uncaught TypeError: this.myMethod is not a function 之类的错误。
 ```
 
-###### 注意事项
+##### 注意事项
 由于 JavaScript 的限制，Vue 不能检测以下变动的数组：
 
 当你利用索引直接设置一个项时，例如：vm.items[indexOfItem] = newValue
@@ -42,7 +42,7 @@ vm.$set(vm.items, indexOfItem, newValue)
 vm.items.splice(newLength)
 ```
 
-###### 对象更改检测注意事项
+##### 对象更改检测注意事项
 还是由于 JavaScript 的限制，Vue 不能检测对象属性的添加或删除：
 ```javascript
 var vm = new Vue({
@@ -92,7 +92,37 @@ vm.userProfile = Object.assign({}, vm.userProfile, {
   favoriteColor: 'Vue Green'
 })
 ```
+##### [事件修饰符](https://cn.vuejs.org/v2/guide/events.html#%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6)
 
+.stop .prevent .capture .self .once .passive
+```javascript
+在事件处理程序中调用 event.preventDefault() 或 event.stopPropagation() 是非常常见的需求。
+尽管我们可以在方法中轻松实现这点，但更好的方式是：方法只有纯粹的数据逻辑，而不是去处理 DOM 事件细节。
+
+<!-- 阻止单击事件继续传播 -->
+<a v-on:click.stop="doThis"></a>
+
+<!-- 提交事件不再重载页面 -->
+<form v-on:submit.prevent="onSubmit"></form>
+
+<!-- 修饰符可以串联 -->
+<a v-on:click.stop.prevent="doThat"></a>
+
+<!-- 只有修饰符 -->
+<form v-on:submit.prevent></form>
+
+<!-- 添加事件监听器时使用事件捕获模式 -->
+<!-- 即元素自身触发的事件先在此处理，然后才交由内部元素进行处理 -->
+<div v-on:click.capture="doThis">...</div>
+
+<!-- 只当在 event.target 是当前元素自身时触发处理函数 -->
+<!-- 即事件不是从内部元素触发的 -->
+<div v-on:click.self="doThat">...</div>
+```
+```
+使用修饰符时，顺序很重要；相应的代码会以同样的顺序产生。
+因此，用 v-on:click.prevent.self 会阻止所有的点击，而 v-on:click.self.prevent 只会阻止对元素自身的点击。
+```
 
 
 
