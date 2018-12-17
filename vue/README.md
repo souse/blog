@@ -144,6 +144,14 @@ vm.userProfile = Object.assign({}, vm.userProfile, {
 
 ###### [程序化的事件侦听器](https://cn.vuejs.org/v2/guide/components-edge-cases.html#%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%9A%84%E4%BA%8B%E4%BB%B6%E4%BE%A6%E5%90%AC%E5%99%A8)
 
+###### [组件之间的循环引用](https://cn.vuejs.org/v2/guide/components-edge-cases.html#%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E5%BE%AA%E7%8E%AF%E5%BC%95%E7%94%A8)
+> 对于A中有B B中有A的组件，异步加载引用
+
+##### [混入](https://cn.vuejs.org/v2/guide/mixins.html)
+
+##### [自定义指令](https://cn.vuejs.org/v2/guide/custom-directive.html)
+
+##### [事件 & 按键修饰符](https://cn.vuejs.org/v2/guide/render-function.html#%E4%BA%8B%E4%BB%B6-amp-%E6%8C%89%E9%94%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6)
 
 
 
