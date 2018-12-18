@@ -153,8 +153,8 @@ vm.userProfile = Object.assign({}, vm.userProfile, {
 
 ##### [事件 & 按键修饰符](https://cn.vuejs.org/v2/guide/render-function.html#%E4%BA%8B%E4%BB%B6-amp-%E6%8C%89%E9%94%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6)
 
-
-
+##### [开发插件](https://cn.vuejs.org/v2/guide/plugins.html#%E5%BC%80%E5%8F%91%E6%8F%92%E4%BB%B6)
+##### [过滤器](https://cn.vuejs.org/v2/guide/filters.html)
 
 
 
