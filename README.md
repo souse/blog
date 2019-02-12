@@ -37,3 +37,4 @@
 * [基于指令和混合的前端通用埋点方案](https://juejin.im/entry/5958e9086fb9a06bb95abe4a)
 * [vue项目前端埋点](https://www.jianshu.com/p/7bc63935a570)
 * [vue 百度统计埋点插件](https://github.com/minlingchao1/vue-ba)
+* [vue 友盟统计埋点插件](https://github.com/raychenfj/vue-uweb)
