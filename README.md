@@ -38,3 +38,4 @@
 * [vue项目前端埋点](https://www.jianshu.com/p/7bc63935a570)
 * [vue 百度统计埋点插件](https://github.com/minlingchao1/vue-ba)
 * [vue 友盟统计埋点插件](https://github.com/raychenfj/vue-uweb)
+* [前端埋点统计方案思考](https://sunmengyuan.github.io/garden/2018/12/13/trace.html)
