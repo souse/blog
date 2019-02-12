@@ -31,3 +31,8 @@
 * [Etag & Last-modified](https://blog.csdn.net/guodengh/article/details/78952540)
 * [Expires、Last-Modified、Etag缓存控制](https://www.cnblogs.com/zhouwenhong/p/3928645.html)
 * [http响应头里没有或者有content-length的几种可能性](https://www.cnblogs.com/lovelacelee/p/5385683.html)
+
+###### 埋点
+* [前端监控和前端埋点方案设计](https://github.com/forthealllight/blog/issues/23)
+* [基于指令和混合的前端通用埋点方案](https://juejin.im/entry/5958e9086fb9a06bb95abe4a)
+* [vue项目前端埋点](https://www.jianshu.com/p/7bc63935a570)
