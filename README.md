@@ -39,3 +39,4 @@
 * [vue 百度统计埋点插件](https://github.com/minlingchao1/vue-ba)
 * [vue 友盟统计埋点插件](https://github.com/raychenfj/vue-uweb)
 * [前端埋点统计方案思考](https://sunmengyuan.github.io/garden/2018/12/13/trace.html)
+* [vue中教你用decorator实现无痕埋点](https://www.jianshu.com/p/467544cb088e)
