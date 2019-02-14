@@ -40,3 +40,6 @@
 * [vue 友盟统计埋点插件](https://github.com/raychenfj/vue-uweb)
 * [前端埋点统计方案思考](https://sunmengyuan.github.io/garden/2018/12/13/trace.html)
 * [vue中教你用decorator实现无痕埋点](https://www.jianshu.com/p/467544cb088e)
+* [web 前端数据采集埋点](https://github.com/bailinlin/web-sdk)
+* [一个智能的web端大数据采集库，支持代码埋点、可视化埋点、abtest](https://github.com/534591395/smart_web_data_sdk)
+
