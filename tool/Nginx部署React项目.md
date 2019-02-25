@@ -1,4 +1,4 @@
-###### 单项目根目录部署(不带上下文)
+##### 单项目根目录部署(不带上下文)
 
 ```
 server {
@@ -13,7 +13,7 @@ server {
 }
 ```
 
-###### 多项目部署(带上下文) ```BrowserRouter```
+##### 多项目部署(带上下文) ```BrowserRouter```
 
 ```
 server {
@@ -35,7 +35,7 @@ server {
 >
 > ```<BrowserRouter basename="/report">otherRouters</BrowserRouter>```
 
-###### VUE 多项目 和 React 类似 可能上面那个有些问题
+##### VUE 多项目 和 React 类似 可能上面那个有些问题
 
 ```
 server {
@@ -51,5 +51,6 @@ server {
 ```
 vue config => publicPath: '/report/' [publicpath](https://cli.vuejs.org/zh/config/#publicpath)  
 vue router => base: '/report/' [base](https://router.vuejs.org/zh/api/#base)
+> react 多项目应该和vue类似 主要配置在webpack 的publicpath 和 react-router 的 base
 
 
