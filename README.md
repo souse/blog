@@ -43,4 +43,5 @@
 * [web 前端数据采集埋点](https://github.com/bailinlin/web-sdk)
 * [一个智能的web端大数据采集库，支持代码埋点、可视化埋点、abtest](https://github.com/534591395/smart_web_data_sdk)
 * [埋点脚本的实现原理了解一下](https://github.com/bailinlin/web-sdk/issues/1)
+* [try-catch-global](https://github.com/foio/try-catch-global.js)
 
