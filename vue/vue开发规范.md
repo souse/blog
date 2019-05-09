@@ -123,3 +123,6 @@ methods: {
 > 2. 组件的命名空间  
 >   a. 公用业务组件 业务名-container , eg: dialog-container  
 >   b. 功能组件     业务名-container , eg: hospital-search-container
+
+##### 5. [eslint](<https://github.com/souse/blog/blob/master/vue/eslint.md>)
+
