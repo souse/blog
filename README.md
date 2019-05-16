@@ -19,6 +19,7 @@
 * [关于 video 播放的新探索](https://segmentfault.com/a/1190000015611832)
 * [移动端适配方案：基于flexible库的成熟方案和基于vw的新方案](https://mobilesite.github.io/2018/02/05/vm-mobile-layout/)
 * [发布npm组件包**基础**](https://segmentfault.com/a/1190000006250554)
+* [浅谈npm 的依赖与版本](https://github.com/SamHwang1990/blog/issues/7)
 * [高性能滚动 scroll 及页面渲染优化](http://www.cnblogs.com/coco1s/p/5499469.html)
 * [requestAnimationFrame](http://caibaojian.com/requestanimationframe.html)
 * [如何监听用户点击浏览器后退按钮](https://github.com/luokuning/blogs/issues/3)
