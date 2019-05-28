@@ -24,6 +24,7 @@
 * [requestAnimationFrame](http://caibaojian.com/requestanimationframe.html)
 * [如何监听用户点击浏览器后退按钮](https://github.com/luokuning/blogs/issues/3)
 * [移动端滚动穿透问题](https://github.com/pod4g/tool/wiki/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%BB%9A%E5%8A%A8%E7%A9%BF%E9%80%8F%E9%97%AE%E9%A2%98)
+* [localStorage跨域](https://gist.github.com/buren/8d7c831822bc474164cc37dd522c2d1d)
 
 ###### HTTP
 * [http、html和浏览器篇](https://github.com/forthealllight/blog/issues/19)
