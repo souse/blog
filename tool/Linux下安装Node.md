@@ -28,3 +28,4 @@
 
 &emsp;&emsp;```source /etc/profile```
 
+`软连不是最好的， 也可以这么来`[Installing NodeJs](https://computingforgeeks.com/installing-node-js-10-lts-on-centos-7-fedora-29-fedora-28/)
