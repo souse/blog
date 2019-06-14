@@ -11,6 +11,7 @@
 * [来自阿里云](https://cn.aliyun.com/jiaocheng/676792.html)
 
 ###### 大杂烩
+* [mac工具大全](https://github.com/Louiszhai/tool)
 * [前端Talk月刊第一期](https://github.com/icepy/icepy.me/issues/23)
 * **前端书籍好文章**: 
   > 1. [开发书籍](https://github.com/threerocks/studyFiles/tree/master/%E5%89%8D%E7%AB%AF)
