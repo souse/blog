@@ -28,6 +28,7 @@
 * [localStorage跨域](https://gist.github.com/buren/8d7c831822bc474164cc37dd522c2d1d)
 * [Mac系统下appium环境搭建](https://github.com/HuJiaoHJ/blog/issues/1)
 * [博客1](https://github.com/amandakelake/blog)
+* [博客2](https://github.com/youngwind/blog)
 
 ###### HTTP
 * [http、html和浏览器篇](https://github.com/forthealllight/blog/issues/19)
