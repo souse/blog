@@ -29,6 +29,7 @@
 * [Mac系统下appium环境搭建](https://github.com/HuJiaoHJ/blog/issues/1)
 * [博客1](https://github.com/amandakelake/blog)
 * [博客2](https://github.com/youngwind/blog)
+* [博客3](https://github.com/happylindz/blog)
 
 ###### HTTP
 * [http、html和浏览器篇](https://github.com/forthealllight/blog/issues/19)
