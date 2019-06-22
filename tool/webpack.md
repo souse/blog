@@ -6,3 +6,4 @@
 * [Webpack4优化之路](https://juejin.im/post/5ac42d5c6fb9a028b617b851)
 * [24 个实例入门并掌握「Webpack4」](https://juejin.im/post/5cae0f616fb9a068a93f0613)
 * [比较全的一个webpack打包项目可借鉴](https://github.com/nicejade/vue-boilerplate-template)
+* [webpack 打包速度优化，(happypack, dll 等)](https://www.jianshu.com/p/3b9a19e5cead)
