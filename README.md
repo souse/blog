@@ -31,6 +31,7 @@
 * [博客2](https://github.com/youngwind/blog)
 * [博客3](https://github.com/happylindz/blog)
 * [博客4](https://github.com/iuap-design/blog/issues)
+* [书籍](https://github.com/lcp0578/book-note)
 * [谷歌云搭建](https://github.com/kaiye/kaiye.github.com/issues/9)
 
 ###### HTTP
