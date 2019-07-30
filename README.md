@@ -33,6 +33,7 @@
 * [博客4](https://github.com/iuap-design/blog/issues)
 * [书籍](https://github.com/lcp0578/book-note)
 * [书籍](https://github.com/bluebird89/Docs/blob/306aeb5831264897554d40d746908980cfaa1c4a/AI/DL/Deep%20Learning.md)
+* [书籍算法](https://github.com/muditbac/Reading)
 * [谷歌云搭建](https://github.com/kaiye/kaiye.github.com/issues/9)
 
 ###### HTTP
