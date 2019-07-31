@@ -1,5 +1,3 @@
-#### 全新服务器前端工具安装配置
-
 #####  `系统` centos
 
 > 查看系统版本号:  cat /etc/redhat-release ， [How to Check CentOS Version](<https://www.thegeekdiary.com/how-to-check-centos-version/>) 
