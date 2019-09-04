@@ -35,6 +35,7 @@
 * [书籍](https://github.com/bluebird89/Docs/blob/306aeb5831264897554d40d746908980cfaa1c4a/AI/DL/Deep%20Learning.md)
 * [书籍算法](https://github.com/muditbac/Reading)
 * [谷歌云搭建](https://github.com/kaiye/kaiye.github.com/issues/9)
+* [你真的会用 babel 吗？](https://github.com/sunyongjian/blog/issues/30)
 
 ###### HTTP
 * [http、html和浏览器篇](https://github.com/forthealllight/blog/issues/19)
