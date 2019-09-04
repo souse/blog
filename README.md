@@ -61,3 +61,4 @@
 * [前端埋点技术总结](https://github.com/ceerqingting/issueBlog/issues/14)
 * [web 前端数据采集埋点 项目](https://github.com/bailinlin/web-sdk)
 * [基于 vue 的页面无埋点方案](https://github.com/wengjq/Share/issues/2)
+* [前端监控及埋点方案](https://github.com/Meqn/store/issues/26)
