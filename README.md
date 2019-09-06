@@ -12,30 +12,56 @@
 
 ###### 大杂烩
 * [mac工具大全](https://github.com/Louiszhai/tool)
+
 * [前端Talk月刊第一期](https://github.com/icepy/icepy.me/issues/23)
+
 * **前端书籍好文章**: 
   > 1. [开发书籍](https://github.com/threerocks/studyFiles/tree/master/%E5%89%8D%E7%AB%AF)
   > 2. [css 知识点](https://github.com/chokcoco/cnblogsArticle)
+  
 * [使用Flexible实现手淘H5页面的终端适配](https://github.com/amfe/article/issues/17)
+
 * [关于 video 播放的新探索](https://segmentfault.com/a/1190000015611832)
+
 * [移动端适配方案：基于flexible库的成熟方案和基于vw的新方案](https://mobilesite.github.io/2018/02/05/vm-mobile-layout/)
+
 * [发布npm组件包**基础**](https://segmentfault.com/a/1190000006250554)
+
 * [浅谈npm 的依赖与版本](https://github.com/SamHwang1990/blog/issues/7)
+
 * [高性能滚动 scroll 及页面渲染优化](http://www.cnblogs.com/coco1s/p/5499469.html)
+
 * [requestAnimationFrame](http://caibaojian.com/requestanimationframe.html)
+
 * [如何监听用户点击浏览器后退按钮](https://github.com/luokuning/blogs/issues/3)
+
 * [移动端滚动穿透问题](https://github.com/pod4g/tool/wiki/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%BB%9A%E5%8A%A8%E7%A9%BF%E9%80%8F%E9%97%AE%E9%A2%98)
+
 * [localStorage跨域](https://gist.github.com/buren/8d7c831822bc474164cc37dd522c2d1d)
+
 * [Mac系统下appium环境搭建](https://github.com/HuJiaoHJ/blog/issues/1)
+
 * [博客1](https://github.com/amandakelake/blog)
+
 * [博客2](https://github.com/youngwind/blog)
+
 * [博客3](https://github.com/happylindz/blog)
+
 * [博客4](https://github.com/iuap-design/blog/issues)
+
 * [书籍](https://github.com/lcp0578/book-note)
+
 * [书籍](https://github.com/bluebird89/Docs/blob/306aeb5831264897554d40d746908980cfaa1c4a/AI/DL/Deep%20Learning.md)
+
 * [书籍算法](https://github.com/muditbac/Reading)
+
 * [谷歌云搭建](https://github.com/kaiye/kaiye.github.com/issues/9)
+
 * [你真的会用 babel 吗？](https://github.com/sunyongjian/blog/issues/30)
+
+* [手机端各种奇葩问题总录](https://github.com/zhongDZ/zhongdz.github.com/issues/37)
+
+* [移动Web应用开发指南](https://github.com/maxzhang/maxzhang.github.com/issues/32)
 
 ###### HTTP
 * [http、html和浏览器篇](https://github.com/forthealllight/blog/issues/19)
