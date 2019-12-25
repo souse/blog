@@ -26,3 +26,61 @@ const getSearchByName = name => {
   const match = RegExp(`[?&]${name}=([^&]*)`).exec(window.location.href);
   return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
 };
+
+/**
+ * @description 防抖
+ * @author souse
+ * @date 2019-12-25
+ * @param {*} fn 回调函数
+ * @param {long} wait ms
+ * @returns
+ */
+function debounce(fn, wait) {
+  let timer = null;
+
+  return function() {
+    const context = this,
+      args = arguments;
+    
+      if (timer) {
+        clearTimeout(timer);
+        timer = null;
+      }
+
+      timer = setTimeout(() => {
+        fn.apply(context, args);
+      }, wait);
+  }
+}
+
+/**
+ * @description 截流
+ * @author souse
+ * @date 2019-12-25
+ * @param {*} fn
+ * @param {*} delay
+ * @returns
+ */
+function trottle(fn, delay) {
+  let timer = null;
+  let startTime = Date.now();
+
+  return function() {
+    const context = this, 
+      args = arguments;
+    const curTime = Date.now();
+    const remainning = delay - (curTime - startTime);
+    
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
+    }
+
+    if (remainning <= 0) {
+      fn.apply(context, args);
+      startTime = Date.now();
+    } else {
+      timer = setTimeout(fn, remainning);
+    }
+  }
+}
