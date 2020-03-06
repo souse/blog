@@ -84,3 +84,17 @@ function trottle(fn, delay) {
     }
   }
 }
+
+function deepClone(obj) {
+  if (typeof obj !== 'object') return;
+  let newObj = obj instanceof Array ? [] : {};
+  
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      const e = obj[key];
+      
+      newObj[key] = typeof e === 'object' ? arguments.callee(e) : e;
+    }
+  }
+  return newObj;
+}
