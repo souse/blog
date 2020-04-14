@@ -159,4 +159,4 @@ Function.prototype.apply2 = function (context, args) {
 >1. 箭头函数体内的 this 对象, 就是定义时所在的对象, 而不是使用时所在的对象;所以不需要类似于`var _this = this`这种丑陋的写法
 >2. 箭头函数不可以当作构造函数，也就是说不可以使用 new 命令, 否则会抛出一个错误
 >3. 箭头函数不可以使用 arguments 对象,，该对象在函数体内不存在. 如果要用, 可以用 Rest 参数代替
->4. 不可以使用 yield 命令, 因此箭头函数不能用作 Generator 函数。[Generator 函数](https://link.jianshu.com/?t=http%3A%2F%2Fwww.ruanyifeng.com%2Fblog%2F2015%2F04%2Fgenerator.html)、[Generator 函数的异步应用](https://link.jianshu.com/?t=http%3A%2F%2Fes6.ruanyifeng.com%2F%23docs%2Fgenerator-async)
+>4. 不可以使用 yield 命令, 因此箭头函数不能用作 Generator 函数。[Generator 函数](https://link.jianshu.com/?t=http%3A%2F%2Fwww.ruanyifeng.com%2Fblog%2F2015%2F04%2Fgenerator.html)、[Generator 函数的异步应用](https://link.jianshu.com/?t=http%3A%2F%2Fes6.ruanyifeng.com%2F%23docs%2Fgenerator-async)、[js深入，call, apply模拟实现](https://github.com/mqyqingfeng/Blog/issues/11)、[js深入bind模拟实现](https://github.com/mqyqingfeng/Blog/issues/12)
