@@ -111,10 +111,47 @@ if (!Function.prototype.bind) {
 }
 ```
 
-```
+```javascript
 汇总
 1. bind返回对应函数, 便于稍后调用； apply, call则是立即调用。
 2. 在 ES6 的箭头函数下, call 和 apply 将失效, 对于箭头函数来说:
+
+Function.prototype.call2 = function(context) {
+  context = context || window;
+  context.fn = this;
+
+  var args = [];
+
+  for (var i = 1; i < arguments.length; i++) {
+    args.push('arguments[' + i + ']');
+  }
+
+  var result = eval('context.fn('+ args +')');
+  delete context.fn;
+
+  return result;
+};
+
+Function.prototype.apply2 = function (context, args) {
+  context = Object(context) || window;
+  context.fn = this;
+
+  var result;
+  if (args) {
+    result = context.fn(args);
+  } else {
+    var arr = [];
+
+    for (let i = 0; i < args.length; i++) {
+      arr.push('arr[' + i + ']');
+    }
+    result = eval('context.fn(' + arr + ')');
+  }
+
+  delete context.fn;
+  return  result;
+}
+
 ```
 
 >延伸阅读
