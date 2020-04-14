@@ -137,7 +137,7 @@ Function.prototype.apply2 = function (context, args) {
   context.fn = this;
 
   var result;
-  if (args) {
+  if (!args) {
     result = context.fn(args);
   } else {
     var arr = [];
