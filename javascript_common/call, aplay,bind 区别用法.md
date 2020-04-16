@@ -152,6 +152,24 @@ Function.prototype.apply2 = function (context, args) {
   return  result;
 }
 
+Function.prototype.bind4 = function(context) {
+  var self = this;
+  var args = [].slice.call(arguments, 1);
+  
+  function fNOP() {}
+  var fBound = function () {
+    var bindArgs = [].slice.call(arguments);
+
+    context = this instanceof fNOP ? this : context;
+    return self.apply(context, args.concat(bindArgs));
+  };
+
+  fNOP.prototype = this.prototype;
+  fBound.prototype = new fNOP();
+
+  return fBound;
+}
+
 ```
 
 >延伸阅读
