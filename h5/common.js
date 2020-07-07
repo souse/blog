@@ -98,3 +98,22 @@ function deepClone(obj) {
   }
   return newObj;
 }
+
+Function.prototype.after = function(fn) {
+  let _self = this;
+  return function() {
+    let ret = _self.apply(this, arguments);
+
+    fn.apply(this, arguments);
+    return ret;
+  }
+}
+
+Function.prototype.before = function(fn) {
+  let _self = this;
+
+  return function() {
+    fn.apply(this, arguments);
+    return _self.apply(this, arguments);
+  }
+}
