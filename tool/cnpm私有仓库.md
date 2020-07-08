@@ -157,12 +157,112 @@ enableAbbreviatedMetadata: true,
 
 ###### 4. 配置主页
 
+* `services/package.js`文件中添加方法：
+
+```javascript
+/**
+ * 显示所有的模块
+ */
+exports.listAllModules = function* () {
+  var rows = yield Module.findAll({
+    attributes: [
+      'name', 'description', 'version',
+    ]
+  });
+  return rows;
+};
+```
+
+* 添加`controllers/web/package/list_all.js`文件。内容：
+
+```javascript
+'use strict';
+
+var packageService = require('../../../services/package');
+
+module.exports = function* listAllModules() {
+  var tasks = {};
+
+  tasks = packageService.listAllModules()
+
+  var packages = yield tasks;
+  yield this.render('all', {
+    title: 'all packages',
+    packages: packages
+  });
+};
+```
+
+* 在`routes/web.js`文件中添加路由处理：
+
+```javascript
+// 首先引入方法
+var listAll = require('../controllers/web/package/list_all');
+// 再添加路由处理
+app.get('/all', listAll)
+```
+
+* 在首页的总数中添加超链接，直接跳转到列表页面。更改`public/js/readme.js`文件：
+
+```javascript
+$('#total-packages').html(${humanize(data.doc_count)});
+// 更改为
+$('#total-packages').html(`<a href="/all">${humanize(data.doc_count)}</a>`);
+```
+
+* 添加`view/web/all.html`文件，内容如下：
+
+```javascript
+<style>
+  #all .package {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #all .alert a {
+    font-size: 20px;
+  }
+
+  #all .package-description {
+    margin: 0.5em 0;
+    font-size: 16px;
+  }
+  
+</style>
+  <div id="all">
+      <h1>All packages</h1>
+      <% if (!packages.length) { %>
+      <div class="alert alert-warning">
+        no package
+      </div>
+      <% } else {%>
+        <% for (var i = 0; i < packages.length; i++) {
+          var item = packages[i];
+        %>
+        <div class="package">
+          <a href="/package/<%= item.name %>" class="package-name"><%= item.name %></a>
+          <p class="package-description"><%= item.description %></p>
+        </div>
+        <% } %>
+      <% } %>
+  </div>
+```
+
+* 添加自定义readme文件（配置文件`config/index.js`中更改）
+
+```javascript
+// 自定义首页显示的readme文件
+customReadmeFile: 'docs/web/custome_readme.md', // you can use your custom readme file instead the cnpm one
+```
+
 [请参考](http://gehaiqing.com/blog/2019/10/21/cnpmjs-build-private-registry/)
 
 ###### 5. 发布scope包
 
-```
+```shell
 npm init --scope=scopename
+# 作用域模块默认发布是私有的，这时如果要发布成公用模块，添加 access=public 参数
 npm publish --access=public
 ```
 
