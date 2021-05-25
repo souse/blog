@@ -96,8 +96,8 @@
 [使用flv.js做直播](https://github.com/gwuhaolin/blog/issues/3)
 
 ##### 微前端
-[my-single-spa](https://github.com/YataoZhang/my-single-spa)
-[my-single-spa记录](https://github.com/YataoZhang/my-single-spa/issues/4)
-[single-spa](https://github.com/single-spa/single-spa)
-[微前端解决方案](https://tech.antfin.com/community/articles/536)
-[乾坤](https://qiankun.umijs.org/zh/guide)
+[my-single-spa](https://github.com/YataoZhang/my-single-spa)  
+[my-single-spa记录](https://github.com/YataoZhang/my-single-spa/issues/4)  
+[single-spa](https://github.com/single-spa/single-spa)  
+[微前端解决方案](https://tech.antfin.com/community/articles/536)  
+[乾坤](https://qiankun.umijs.org/zh/guide)  
