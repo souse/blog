@@ -3,10 +3,12 @@
 1. cd ~/.ssh  
 # 查看当前目录公私钥文件 
 # ssh-keygen  如无 则生成
+
 2. 上传公钥到服务器
 ssh-copy-id -i [公钥文件] user@host 
 # user是你的ssh的用户，host是服务器地址，这时候还要输入密码。
 # 例子：ssh-copy-id -i id_rsa.pub root@255.255.255.255
+
 3. ssh-add（可有可无）
 ssh-add -K [非.pub结尾的文件] 
 # 例如，ssh-add -K id_rsa
@@ -16,6 +18,7 @@ ssh-add -K [非.pub结尾的文件]
 #### 2. 多个ssh配置
 ```
 1. touch  ~/.ssh/config
+
 2. 通过vim编辑config，添加服务器配置信息
 
 Host drank                      // 服务器别名
