@@ -41,7 +41,7 @@ class WebSocketClient {
   private readonly keepAliveInterval: number
   private readonly heartbeatInterval: number
   // private heartbeatTimer: NodeJS.Timer | null = null
-  private heartbeatTimer = null
+  private heartbeatTimer: number | null
 
   private closeByUser: boolean = false
   private readyState: number = WebSocket.CLOSED
