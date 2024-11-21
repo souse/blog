@@ -31,3 +31,8 @@ Hostname 192.168.1.55           // 服务器地址
 User admin                      // 服务器用户
 Identityfile ~/.ssh/id_rsa      // 服务器公钥对应的【本地私钥】
 ```
+
+```
+其他通过密钥进
+ssh -i xxx.pem root@255.155.255.255
+```
