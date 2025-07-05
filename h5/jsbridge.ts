@@ -12,9 +12,8 @@
  * 回调结果接口
  */
 export interface CallbackResult {
-  success: boolean
+  code: number
   data?: any
-  errorCode?: number
   message?: string
 }
 
@@ -36,11 +35,8 @@ interface BridgeMessage {
  * 原生响应接口
  */
 interface NativeResponse {
-  success: boolean
-  data?: any
-  errorCode?: number
-  message?: string
-  callbackId?: string
+  responseData: CallbackResult
+  responseId: string
 }
 
 /**
@@ -51,6 +47,9 @@ export enum ShareMethod {
   SMS = 'wkShareSMS',
   EMAIL = 'wkShareEmail',
   OTHERS = 'wkShareOthers',
+  GOBACK = 'wkGoBack',
+  INVITE_DATA = 'wkGetInviteData',
+  USER_TOKEN = 'wkUserToken',
 }
 
 class ViaWebkitBridge {
@@ -104,11 +103,15 @@ class ViaWebkitBridge {
   /**
    * 主要的invoke方法
    */
-  public invoke(
-    methodName: string,
-    data?: string,
-    callback?: CallbackFunction
-  ): void {
+  public invoke(methodName: string, ...args: any[]): void {
+    let callback: CallbackFunction | undefined
+    let data = args[0]
+
+    // 如果最后一个参数是函数，则为 callback
+    if (typeof args[args.length - 1] === 'function') {
+      callback = args.pop()
+    }
+
     const message: BridgeMessage = {
       handlerName: methodName,
       data: data || '',
@@ -125,8 +128,7 @@ class ViaWebkitBridge {
         if (this.callbacks[cbId]) {
           delete this.callbacks[cbId]
           callback({
-            success: false,
-            errorCode: -1,
+            code: -1,
             message: 'Request timeout',
           })
         }
@@ -145,8 +147,7 @@ class ViaWebkitBridge {
       console.error('ViaWebkit: Error sending message to native:', error)
       if (callback) {
         callback({
-          success: false,
-          errorCode: -1,
+          code: -1,
           message: `Failed to send message to native: ${error.message}`,
         })
       }
@@ -160,18 +161,15 @@ class ViaWebkitBridge {
     try {
       const data = decodeURIComponent(encodedData)
       const response: NativeResponse = JSON.parse(data)
+      const { responseData, responseId } = response
 
-      if (response.callbackId && this.callbacks[response.callbackId]) {
-        const callback = this.callbacks[response.callbackId]
-        delete this.callbacks[response.callbackId]
+      // console.log('ViaWebkit: Received native response:', response)
+      if (responseId && this.callbacks[responseId]) {
+        const callback = this.callbacks[responseId]
+        delete this.callbacks[responseId]
 
         // 执行回调
-        callback({
-          success: response.success,
-          data: response.data,
-          errorCode: response.errorCode,
-          message: response.message,
-        })
+        callback(responseData)
       }
     } catch (e) {
       console.error('ViaWebkit: Error processing native response:', e)
@@ -199,6 +197,27 @@ class ViaWebkitBridge {
   // ======================== 便捷方法 ========================
 
   /**
+   * 关闭webview
+   */
+  public goBack(callback?: CallbackFunction): void {
+    this.invoke(ShareMethod.GOBACK, callback)
+  }
+
+  /**
+   * 获取用户token
+   */
+  public getUserToken(callback?: CallbackFunction): void {
+    this.invoke(ShareMethod.USER_TOKEN, callback)
+  }
+
+  /**
+   * 获取邀请数据
+   */
+  public getInviteData(callback?: CallbackFunction): void {
+    this.invoke(ShareMethod.INVITE_DATA, callback)
+  }
+
+  /**
    * WhatsApp分享
    */
   public shareToWhatsApp(message: string, callback?: CallbackFunction): void {
@@ -208,33 +227,26 @@ class ViaWebkitBridge {
   /**
    * 发送短信
    */
-  public sendSMS(
-    phoneNumber: string,
-    message: string,
-    callback?: CallbackFunction
-  ): void {
-    const data = `${phoneNumber},${message}`
-    this.invoke(ShareMethod.SMS, data, callback)
+  public sendSMS(data: { phoneNumber: string; message: string }): void {
+    this.invoke(ShareMethod.SMS, data)
   }
 
   /**
    * 发送邮件
    */
-  public sendEmail(
-    toEmail: string,
-    subject: string,
-    body: string,
-    callback?: CallbackFunction
-  ): void {
-    const data = `${toEmail},${subject},${body}`
-    this.invoke(ShareMethod.EMAIL, data, callback)
+  public sendEmail(data: {
+    toEmail: string
+    subject: string
+    body: string
+  }): void {
+    this.invoke(ShareMethod.EMAIL, data)
   }
 
   /**
    * 通用分享
    */
-  public shareOthers(text: string, callback?: CallbackFunction): void {
-    this.invoke(ShareMethod.OTHERS, text, callback)
+  public shareOthers(text: string): void {
+    this.invoke(ShareMethod.OTHERS, text)
   }
 
   // ======================== 工具方法 ========================
